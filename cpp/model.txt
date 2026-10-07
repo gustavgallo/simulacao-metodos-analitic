@@ -1,0 +1,58 @@
+[ARRIVALS]
+Q1 0.0
+
+[QUEUES]
+Q1
+servers 1
+capacity inf
+minArrival 2.0
+maxArrival 4.0
+minService 1.0
+maxService 2.0
+
+Q2
+servers 2
+capacity 5
+minService 4.0
+maxService 6.0
+
+Q3
+servers 2
+capacity 10
+minService 5.0
+maxService 15.0
+
+[NETWORK]
+Q1 Q2 0.2
+Q1 Q3 0.8
+Q2 Q1 0.3
+Q2 Q2 0.5
+Q3 Q3 0.7
+
+[RNDNUMBERS]
+0.2176
+0.0103
+0.1109
+0.3456
+0.9910
+0.2323
+0.9211
+0.0322
+0.1211
+0.5131
+0.7208
+0.9172
+0.9922
+0.8324
+0.5011
+0.2931
+
+[RNDNUMBERSPERSEED]
+100000
+
+[SEEDS]
+1
+2
+3
+4
+5
