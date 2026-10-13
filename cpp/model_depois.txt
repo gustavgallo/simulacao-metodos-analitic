@@ -1,0 +1,57 @@
+[ARRIVALS]
+Q1 0.0
+
+[QUEUES]
+Q1
+servers 2
+capacity 25
+minArrival 3.0
+maxArrival 8.0
+minService 4.0
+maxService 10.0
+
+Q2
+servers 4
+capacity 20
+minService 10.0
+maxService 25.0
+
+Q3
+servers 6
+capacity 20
+minService 20.0
+maxService 50.0
+
+Q4
+servers 3
+capacity 25
+minService 8.0
+maxService 18.0
+
+Q5
+servers 2
+capacity 15
+minService 5.0
+maxService 15.0
+
+[NETWORK]
+Q1 Q2 0.80
+Q1 Q4 0.15
+Q2 Q1 0.10
+Q2 Q3 0.60
+Q2 Q4 0.30
+Q3 Q2 0.20
+Q3 Q4 0.70
+Q4 Q3 0.15
+Q4 Q5 0.85
+Q5 Q4 0.15
+Q5 Q3 0.10
+
+[RNDNUMBERS]
+
+
+[RNDNUMBERSPERSEED]
+100000
+
+[SEEDS]
+1
